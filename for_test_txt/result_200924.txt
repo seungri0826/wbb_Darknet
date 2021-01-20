@@ -1,0 +1,209 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 32, time_steps = 1, train = 0 
+
+ seen 64, trained: 320 K-images (5 Kilo-batches_64) 
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/1.png: Predicted in 3661.283000 milli-seconds.
+box: 86%
+box: 97%
+box: 99%
+box: 100%
+box: 75%
+box: 35%
+box: 100%
+box: 100%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/2.png: Predicted in 870.203000 milli-seconds.
+box: 100%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/13.jpg: Predicted in 868.156000 milli-seconds.
+box: 96%
+box: 97%
+box: 94%
+box: 95%
+box: 94%
+box: 96%
+box: 95%
+box: 89%
+box: 99%
+box: 88%
+box: 41%
+box: 98%
+box: 100%
+box: 96%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/14.jpg: Predicted in 871.135000 milli-seconds.
+box: 76%
+box: 75%
+box: 92%
+box: 59%
+box: 79%
+box: 69%
+box: 83%
+box: 97%
+box: 54%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/15.jpg: Predicted in 867.970000 milli-seconds.
+box: 69%
+box: 85%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/16.jpg: Predicted in 869.170000 milli-seconds.
+box: 39%
+box: 41%
+box: 72%
+box: 70%
+box: 30%
+box: 31%
+box: 35%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/17.jpg: Predicted in 868.609000 milli-seconds.
+box: 27%
+box: 53%
+box: 32%
+box: 42%
+box: 42%
+box: 95%
+box: 51%
+box: 91%
+box: 85%
+box: 53%
+box: 37%
+box: 51%
+box: 30%
+box: 35%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/18.jpg: Predicted in 867.534000 milli-seconds.
+box: 30%
+box: 88%
+box: 70%
+box: 44%
+box: 34%
+box: 31%
+box: 96%
+box: 88%
+box: 47%
+box: 91%
+box: 26%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/19.jpg: Predicted in 869.732000 milli-seconds.
+box: 52%
+box: 96%
+box: 26%
+box: 99%
+box: 69%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/20.jpg: Predicted in 869.171000 milli-seconds.
+box: 72%
+box: 36%
+box: 30%
+box: 26%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/21.jpg: Predicted in 870.583000 milli-seconds.
+box: 47%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/22.jpg: Predicted in 869.258000 milli-seconds.
+box: 92%
+box: 43%
+box: 93%
+box: 85%
+box: 94%
+box: 94%
+box: 49%
+box: 82%
+box: 90%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/23.jpg: Predicted in 870.270000 milli-seconds.
+box: 44%
+box: 39%
+box: 62%
+box: 78%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/24.jpg: Predicted in 871.827000 milli-seconds.
+box: 41%
+box: 35%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/25.jpg: Predicted in 868.899000 milli-seconds.
+box: 30%
+box: 29%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/26.jpg: Predicted in 868.954000 milli-seconds.
+box: 99%
+box: 29%
+box: 98%
+box: 52%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/27.jpg: Predicted in 869.775000 milli-seconds.
+box: 99%
+box: 99%
+box: 100%
+box: 100%
+box: 99%
+box: 99%
+box: 99%
+box: 87%
+box: 49%
+box: 100%
+box: 89%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/29.jpg: Predicted in 869.784000 milli-seconds.
+box: 100%
+box: 100%
+box: 100%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/ex1.jpg: Predicted in 869.679000 milli-seconds.
+box: 100%
+box: 91%
+box: 100%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/ex2.jpg: Predicted in 869.980000 milli-seconds.
+box: 100%
+box: 100%
+box: 67%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/ex3.jpg: Predicted in 871.218000 milli-seconds.
+box: 100%
+box: 97%
+box: 91%
+Enter Image Path: 

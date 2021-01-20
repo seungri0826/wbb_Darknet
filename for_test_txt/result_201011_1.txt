@@ -1,0 +1,52 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 32, time_steps = 1, train = 0 
+
+ seen 64, trained: 320 K-images (5 Kilo-batches_64) 
+ Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+./data/examples/1.jpg: Predicted in 1791.340000 milli-seconds.
+3 selected_detection_num 출력
+box: 100%
+box: 91%
+box: 100%
+ Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+./data/examples/2.jpg: Predicted in 874.337000 milli-seconds.
+3 selected_detection_num 출력
+box: 100%
+box: 100%
+box: 67%
+ Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+./data/examples/3.jpg: Predicted in 868.609000 milli-seconds.
+3 selected_detection_num 출력
+box: 100%
+box: 97%
+box: 91%
+ Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+./data/examples/4.jpg: Predicted in 872.699000 milli-seconds.
+11 selected_detection_num 출력
+box: 99%
+box: 99%
+box: 100%
+box: 100%
+box: 99%
+box: 99%
+box: 99%
+box: 87%
+box: 49%
+box: 100%
+box: 89%
+ Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+./data/examples/5.jpg: Predicted in 869.759000 milli-seconds.
+3 selected_detection_num 출력
+box: 100%
+box: 100%
+box: 100%

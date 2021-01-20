@@ -1,0 +1,50 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 32, time_steps = 1, train = 0 
+
+ seen 64, trained: 320 K-images (5 Kilo-batches_64) 
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/ex1.jpg: Predicted in 3309.682000 milli-seconds.
+box: 100%
+box: 91%
+box: 100%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/ex2.jpg: Predicted in 871.067000 milli-seconds.
+box: 100%
+box: 100%
+box: 67%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/ex3.jpg: Predicted in 869.644000 milli-seconds.
+box: 100%
+box: 97%
+box: 91%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/1.png: Predicted in 868.019000 milli-seconds.
+box: 86%
+box: 97%
+box: 99%
+box: 100%
+box: 75%
+box: 35%
+box: 100%
+box: 100%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/2.png: Predicted in 873.033000 milli-seconds.
+box: 100%
+Enter Image Path:  Detection layer: 82 - type = 27 
+ Detection layer: 94 - type = 27 
+ Detection layer: 106 - type = 27 
+data/ex/29.jpg: Predicted in 869.537000 milli-seconds.
+box: 100%
+box: 100%
+box: 100%
+Enter Image Path: 
