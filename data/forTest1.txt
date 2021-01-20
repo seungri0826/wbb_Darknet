@@ -1,0 +1,3 @@
+data/ex/ex1.jpg
+data/ex/ex2.jpg
+data/ex/ex3.jpg
