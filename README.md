@@ -13,3 +13,4 @@ NET 챌린지 시즌 7 왕밤빵 - Darknet 수정 코드
   - `obj.data`: [LINK](https://github.com/seungri0826/wbb_Darknet/blob/main/cfg/obj.data)
   - `yolov3_box.cfg`: [LINK](https://github.com/seungri0826/wbb_Darknet/blob/main/cfg/yolov3_box.cfg)
 - There should be `backup` directory which contains `.weights` files, but those files are so large that they cannot be uploaded.
+  - `.weights` files were created by learning labelled images of 'box' in HPC & Darknet.
