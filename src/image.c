@@ -6,7 +6,7 @@
 #include "blas.h"
 #include "dark_cuda.h"
 #include <stdio.h>
-#include <string.h> // 201108 추가
+#include <string.h> // 201108 add
 #ifndef _USE_MATH_DEFINES
 #define _USE_MATH_DEFINES
 #endif
@@ -327,7 +327,8 @@ int compare_by_probs(const void *a_ptr, const void *b_ptr) {
     return delta < 0 ? -1 : delta > 0 ? 1 : 0;
 }
 
-/* 201108
+/* 
+** 기존 draw_detections_v3 함수를 주석처리하였다. (201108)
 void draw_detections_v3(image im, detection *dets, int num, float thresh, char **names, image **alphabet, int classes, int ext_output)
 {
     static int frame_id = 0;
@@ -472,18 +473,18 @@ void draw_detections_v3(image im, detection *dets, int num, float thresh, char *
 }
 */
 
-// 201108 수정
+// 수정한 draw_detections_v3 함수이다. (201108)
 void draw_detections_v3(image im, detection *dets, int num, float thresh, char **names, image **alphabet, int classes, int ext_output, char *filename)
 {
     static int frame_id = 0;
     frame_id++;
 
-    // 201108 추가
+    // 201108 add
     char filename_cpy[256];
     strcpy(filename_cpy, filename);
     char *id = strtok(filename_cpy, "/");
     for (int i = 0; i < 3; ++i) {
-	id = strtok(NULL, "/");
+	    id = strtok(NULL, "/");
     }
     //printf("UID값: %s\n", id);
     char txt_path[256] = "/var/www/html/";
@@ -498,15 +499,14 @@ void draw_detections_v3(image im, detection *dets, int num, float thresh, char *
     strcat(txt_path_tmp, id);
     strcat(txt_path_tmp, ".txt");
     printf("txt_path_tmp: %s\n", txt_path_tmp);
-    //
 
     int selected_detections_num;
     detection_with_class* selected_detections = get_actual_detections(dets, num, thresh, &selected_detections_num, names);
     //printf("%d selected_detection_num 출력\n",selected_detections_num);
     FILE *fpp;
     //fpp = fopen("result_201109.txt", "a+");
-    //fpp = fopen(txt_path, "a+"); // 201108 수정 (실제 코드)
-    fpp = fopen(txt_path_tmp, "a+"); // 201108 수정 (임시 코드)
+    //fpp = fopen(txt_path, "a+"); // 201108 edit
+    fpp = fopen(txt_path_tmp, "a+"); // 201108 edit
     //fprintf(fpp, "%d selected_detection_num\n", selected_detections_num);
     fprintf(fpp, "%d\n", selected_detections_num);
     fclose(fpp);
