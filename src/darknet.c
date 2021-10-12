@@ -484,20 +484,20 @@ int main(int argc, char **argv)
     // 201008 추가(mycommand), 201011 추가(mycommand2)
     if (0 == strcmp(argv[1], "mycommand2")){
         float thresh = find_float_arg(argc, argv, "-thresh", .24);
-                int ext_output = find_arg(argc, argv, "-ext_output");
+        int ext_output = find_arg(argc, argv, "-ext_output");
         char *filename = (argc > 4) ? argv[4]: 0;
-        //test_detector("cfg/coco.data", argv[2], argv[3], filename, thresh, 0.5, 0, ext_output, 0, NULL, 0, 0);
-	printf("mycommand2 start~~!\n");
+        // mycommand2가 잘 작동하는지 확인하는 코드
+	    printf("mycommand2 start~~!\n");
         mycommand2_detector("cfg/obj.data", argv[2], argv[3], filename, 0.25, 0.5, 0, ext_output, 0, NULL, 0, 0);
-	//test1_detector("cfg/obj.data", argv[2], argv[3], filename, thresh, 0.5, 0, ext_output, 0, NULL, 0, 0);
-	printf("mycommand2 end~~!\n");
+        printf("mycommand2 end~~!\n");
     } else if (0 == strcmp(argv[1], "mycommand")){
-	float thresh = find_float_arg(argc, argv, "-thresh", .24);
-                int ext_output = find_arg(argc, argv, "-ext_output");
+	    float thresh = find_float_arg(argc, argv, "-thresh", .24);
+        int ext_output = find_arg(argc, argv, "-ext_output");
         char *filename = (argc > 4) ? argv[4]: 0;
-	printf("start!\n");
-	mycommand_detector("cfg/obj.data", argv[2], argv[3], thresh, 0.5, 0, ext_output, 0, NULL, 0);
-	printf("end!\n");
+        // mycommand가 잘 작동하는지 확인하는 코드
+        printf("start!\n");
+        mycommand_detector("cfg/obj.data", argv[2], argv[3], thresh, 0.5, 0, ext_output, 0, NULL, 0);
+        printf("end!\n");
     } else if (0 == strcmp(argv[1], "average")){
         average(argc, argv);
     } else if (0 == strcmp(argv[1], "yolo")){
@@ -512,8 +512,10 @@ int main(int argc, char **argv)
         float thresh = find_float_arg(argc, argv, "-thresh", .24);
 		int ext_output = find_arg(argc, argv, "-ext_output");
         char *filename = (argc > 4) ? argv[4]: 0;
+        // 기존 test_detector 명령어
         //test_detector("cfg/coco.data", argv[2], argv[3], filename, thresh, 0.5, 0, ext_output, 0, NULL, 0, 0);
-	test_detector("cfg/obj.data", argv[2], argv[3], filename, thresh, 0.5, 1, ext_output, 0, NULL, 0, 0);
+        // detect 명령어를 수정하였다.
+	    test_detector("cfg/obj.data", argv[2], argv[3], filename, thresh, 0.5, 1, ext_output, 0, NULL, 0, 0);
     } else if (0 == strcmp(argv[1], "cifar")){
         run_cifar(argc, argv);
     } else if (0 == strcmp(argv[1], "go")){
