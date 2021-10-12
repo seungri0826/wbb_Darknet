@@ -1591,6 +1591,7 @@ void calc_anchors(char *datacfg, int num_of_clusters, int width, int height, int
 }
 
 /*
+** 기존 test_detector 함수를 주석처리하였다.
 void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filename, float thresh,
     float hier_thresh, int dont_show, int ext_output, int save_labels, char *outfile, int letter_box, int benchmark_layers)
 {
@@ -1759,7 +1760,7 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
 }
 */
 
-// 201011
+// 기존 test_detector 함수를 수정하였다.
 void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filename, float thresh,
     float hier_thresh, int dont_show, int ext_output, int save_labels, char *outfile, int letter_box, int benchmark_layers)
 {
@@ -1803,20 +1804,20 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
     int k = 0;
     while (1) {
         if (filename) {
-	    /* 201101 edit */
+	        /* 201101 edit */
             strncpy(input, filename, 256);
             if (strlen(input) > 0)
                 if (input[strlen(input) - 1] == 0x0d) input[strlen(input) - 1] = 0;
-	    //strtok(input, "\n");
+	        //strtok(input, "\n");
         }
         else {
-	    k++; // 1011
+	        k++; // 201011 edit
             //printf("Enter Image Path: ");
             fflush(stdout);
             //input = fgets(input, 256, stdin);
-	    sprintf(input, "./data/examples/%d.jpg", k); // 1011
+	        sprintf(input, "./data/examples/%d.jpg", k); // 201011 edit
             //if (!input) break;
-	    if (k > 5)	break; // 1011
+	        if (k > 5)	break; // 201011 edit
             strtok(input, "\n");
         }
         //image im;
@@ -1851,15 +1852,15 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
 
         int nboxes = 0;
         detection *dets = get_network_boxes(&net, im.w, im.h, thresh, hier_thresh, 0, 1, &nboxes, letter_box);
-	//printf("%d 개의 상자가 있습니다.\n",nboxes);
+	    //printf("%d 개의 상자가 있습니다.\n",nboxes);
         if (nms) {
             if (l.nms_kind == DEFAULT_NMS) do_nms_sort(dets, nboxes, l.classes, nms);
             else diounms_sort(dets, nboxes, l.classes, nms, l.nms_kind, l.beta_nms);
         }
 
-	// draw detections
-        //draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output); //201108 수정
-	draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output, filename);
+	    // draw detections
+        //draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output); // 201108 edit
+	    draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output, filename); // filename도 넘긴다.
         save_image(im, "predictions");
         //if (!dont_show) {
         //    show_image(im, "predictions");
@@ -1912,9 +1913,9 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
             destroy_all_windows_cv();
         }
 
-	//201106 delete & add
+	// 201106 delete & add
         //if (filename) break;
-	sleep(1); // sleep for 1sec
+	    sleep(1); // sleep for 1sec
     }
 
     // if (json_file)
@@ -1942,7 +1943,6 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
 
     free_network(net);
 }
-// ~ 201011
 
 #if defined(OPENCV) && defined(GPU)
 
@@ -2219,7 +2219,7 @@ void run_detector(int argc, char **argv)
 }
 
 
-// 201008 추가
+// 201008 add
 void mycommand_detector(char *datacfg, char *cfgfile, char *weightfile, char *filename, float thresh,
     float hier_thresh, int dont_show, int ext_output, int save_labels, char *outfile, int letter_box, int benchmark_layers)
 {
@@ -2259,12 +2259,12 @@ void mycommand_detector(char *datacfg, char *cfgfile, char *weightfile, char *fi
     int i = 0;
 
     while (1) {
-	i++;
-	if (i > 6) {
-	    break;
-	}
+        i++;
+        if (i > 6) {
+            break;
+        }
 
-	sprintf(input, "./data/examples/%d.jpg", i);
+        sprintf(input, "./data/examples/%d.jpg", i);
 
         //image im;
         //image sized = load_image_resize(input, net.w, net.h, net.c, &im);
@@ -2332,7 +2332,7 @@ void mycommand_detector(char *datacfg, char *cfgfile, char *weightfile, char *fi
     free_network(net);
 }
 
-// 201011
+// 201011 add
 void mycommand2_detector(char *datacfg, char *cfgfile, char *weightfile, char *filename, float thresh,
     float hier_thresh, int dont_show, int ext_output, int save_labels, char *outfile, int letter_box, int benchmark_layers)
 {
@@ -2381,13 +2381,13 @@ void mycommand2_detector(char *datacfg, char *cfgfile, char *weightfile, char *f
                 if (input[strlen(input) - 1] == 0x0d) input[strlen(input) - 1] = 0;
         }
         else {
-	    k++; // 1011
+	        k++; // 201011 edit
             //printf("Enter Image Path: ");
             fflush(stdout);
             //input = fgets(input, 256, stdin);
-	    sprintf(input, "./data/examples/%d.jpg", k); // 1011
+	        sprintf(input, "./data/examples/%d.jpg", k); // 201011 edit
             //if (!input) break;
-	    if (k > 5)	break; // 1011
+	        if (k > 5)	break; // 201011 edit
             strtok(input, "\n");
         }
         //image im;
@@ -2422,7 +2422,7 @@ void mycommand2_detector(char *datacfg, char *cfgfile, char *weightfile, char *f
 
         int nboxes = 0;
         detection *dets = get_network_boxes(&net, im.w, im.h, thresh, hier_thresh, 0, 1, &nboxes, letter_box);
-	//printf("%d 개의 상자가 있습니다.\n",nboxes);
+	    //printf("%d 개의 상자가 있습니다.\n",nboxes);
         if (nms) {
             if (l.nms_kind == DEFAULT_NMS) do_nms_sort(dets, nboxes, l.classes, nms);
             else diounms_sort(dets, nboxes, l.classes, nms, l.nms_kind, l.beta_nms);
