@@ -482,10 +482,10 @@ int main(int argc, char **argv)
     show_opencv_info();
     
     /*
-    * Darknet 명령어를 수정하였다.
-    * mycommand: 201008 추가 (확인용)
-    * mycommand2: 201011 추가 (확인용)
-    * detect: 수정한 test_detector 함수 이용
+    ** Darknet 명령어를 수정하였다.
+    ** mycommand: 201008 추가 (확인용)
+    ** mycommand2: 201011 추가 (확인용)
+    ** detect: 수정한 test_detector 함수 이용
     */
     if (0 == strcmp(argv[1], "mycommand2")){
         float thresh = find_float_arg(argc, argv, "-thresh", .24);
